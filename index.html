@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Encriptador de Texto</title>
+</head>
+<body>
+    <header>
+        <a>
+            <img class="logo" src="./imagenes/logo.svg" alt="Logo Alura" >
+        </a>    
+    </header>
+
+    <main>
+        <section class="contendor_seccion1">
+            <textarea class="encriptar" placeholder="Ingrese el texto aquí"></textarea>
+            <div class="encriptador_aviso">
+                <spa class="imagen_aviso"><img src="./imagenes/aviso.svg" alt="Imagen Aviso"></spa>
+                <p class="mensaje_restriccion">Solo letras minúsculas y sin acentos</p>
+            </div>
+            <div class="encriptador">
+                <button class="boton_encriptar" type="submit">Encriptar</button>
+                <button class="boton_desencriptar" type="submit">Desencriptar</button>
+            </div>
+        </section>
+
+        <section class="contenedor_seccion2">
+           <div class="contenedor_salida">
+                <img class="img_muneco" src="./imagenes/muneco.svg" alt="Imagen Muñeco">
+                <p class="texto_titulo">Ningún mensaje fue encontrado</p>
+                <p class="texto_parrafo">Ingrese el texto que deseas encriptar o desencriptar</p>
+           </div>
+           <textarea class="encriptado" type="mensaje" readonly></textarea>
+           <button class="boton_copiar" type="submit">Copiar</button>
+         </section>  
+
+    </main>
+
+    <footer>
+        <p class="copyright">&copy; copyright 2024 - Encriptador de Texto - desarrollado por Magg</p>
+        <a href = "https://www.linkedin.com/in/marco-gonzález-gatica-32b2bb207">
+            <img src="./imagenes/linkedin.svg" alt="Logo Linkedin" class="linked">
+        </a>
+        <a href = "https://github.com/mgonz010">
+            <img src="./imagenes/github.svg" alt="Logo Github" class="git">
+        </a>
+    </footer>
+
+    <script src="./javascript/script_encriptador.js"></script>
+
+</body>
+</html>
